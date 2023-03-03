@@ -162,22 +162,5 @@ cmd + alt - i ; ignore
 # return to default mode
 ignore < cmd + alt - i; default
 
-# mode to resize windows
-:: resize : osascript -e 'display notification "skdh mode: resize" with title "skhd"'
-cmd - r ; resize
-# resize works by moving a border (e.g. right border of +/- dx:dy)
-# this is not perfect because relies on using a specific border
-# so you cannot resize window that are at the bottom or right
-resize < h : yabai -m window --resize right:-10:0
-resize < j : yabai -m window --resize bottom:0:10
-resize < k : yabai -m window --resize bottom:0:-10
-resize < l : yabai -m window --resize right:10:0
-resize < left : yabai -m window --resize right:-10:0
-resize < down : yabai -m window --resize bottom:0:10
-resize < up : yabai -m window --resize bottom:0:-10
-resize < right : yabai -m window --resize right:10:0
-# return to normal mode
-resize < cmd - r; default
-
 # navigating workspaces seems to required higher privileges
 # but we can use the native ctrl+left and ctrl-right to do so
