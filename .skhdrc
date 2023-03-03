@@ -108,7 +108,7 @@
 cmd - z : pmset displaysleepnow
 
 # start a terminal
-cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+cmd - return : open -na /Applications/Alacritty.app/Contents/MacOS/alacritty
 
 # mac closes apps with cmd+q, this works natively, and with cmd+tab
 
@@ -139,7 +139,6 @@ cmd - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window split type
 cmd - e : yabai -m window --toggle split
-
 # # float / unfloat window and center on screen
 cmd + shift - space : yabai -m window --toggle float
 
