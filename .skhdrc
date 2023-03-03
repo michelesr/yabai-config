@@ -177,6 +177,3 @@ resize < alt - r; default
 
 # navigating workspaces seems to required higher privileges
 # but we can use the native ctrl+left and ctrl-right to do so
-
-# float next window to be tiled
-alt + shift - t : chunkc set window_float_next 1
