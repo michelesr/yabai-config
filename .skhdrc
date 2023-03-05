@@ -110,6 +110,9 @@ alt - z : pmset displaysleepnow
 # start a terminal
 alt - return : open -na /Applications/Alacritty.app/Contents/MacOS/alacritty
 
+# start the browser
+alt - backspace : open -na /Applications/Firefox.app/Contents/MacOS/firefox
+
 # mac closes apps with cmd+q, this works natively, and with cmd+tab
 
 # close focused window (doesn't always work, try cmd - q instead)
